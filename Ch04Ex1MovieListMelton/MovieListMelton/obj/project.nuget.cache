@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4dnwvpbR5P3Ej9GgwCxlb7yA0CN6iz/z+qThcoPcd4+SGG8CQgPJ4uJ2NttwxmWI7DxFL2/5/rVD7t+C0hyLxw==",
+  "dgSpecHash": "h38G2HVQ8mpT1MTVvNdkuJRdEIxZQS50pOaURbw3AOxVJon7oG6X8QClLaP/GeNEMYwqZP6U8LCy5SQdL4Lzhw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kylem\\Desktop\\College\\CS174\\Ch04Ex1MovieListMelton\\MovieListMelton\\MovieListMelton.csproj",
+  "projectFilePath": "C:\\Users\\kylem\\Desktop\\College\\CS174\\DMACC\\Ch04Ex1MovieListMelton\\MovieListMelton\\MovieListMelton.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kylem\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\kylem\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

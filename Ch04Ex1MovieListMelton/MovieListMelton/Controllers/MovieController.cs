@@ -25,9 +25,15 @@ namespace MovieListMelton.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (movie.MovieId == 0) context.Movies.Add(movie);
+                if (movie.MovieId == 0)
+                {
+                    this.context.Movies.Add(movie);
+                }
                 else
-                    context.Movies.Update(movie); context.SaveChanges();
+                {
+                    this.context.Update(movie);
+                }
+                this.context.SaveChanges();
                 return RedirectToAction("Index", "Home");
             }
             else
@@ -38,12 +44,14 @@ namespace MovieListMelton.Controllers
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            var movie = context.Movies.Find(id); return View(movie);
+            var movie = context.Movies.Find(id);
+            return View(movie);
         }
         [HttpPost]
         public IActionResult Delete(Movie movie)
         {
-            context.Movies.Remove(movie); context.SaveChanges();
+            context.Movies.Remove(movie);
+            context.SaveChanges();
             return RedirectToAction("Index", "Home");
         }
     }
