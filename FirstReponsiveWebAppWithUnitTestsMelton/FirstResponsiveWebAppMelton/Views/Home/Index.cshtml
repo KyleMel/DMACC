@@ -1,0 +1,53 @@
+﻿@model FirstReponsiveWebAppModel
+@{
+    ViewBag.Title = "First Reponsive WebApp";
+}
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>First Responsive WebApp</title> 
+  <style>
+        body {
+            padding: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            margin-top: 0;
+            color: black;
+        }
+        label {
+            display: inline-block;
+            width: 10em;
+            padding-right: 1em;
+        }
+        div {
+            margin-bottom: .5em;
+        }
+  </style>
+</head> 
+<html>
+  <h1>First Reponsive WebApp</h1>
+<body>
+    <form asp-action="Index" method="post">
+        <div asp-validation-summary="All"></div>
+        <div>
+            <label asp-for="Name">Enter Name:</label>
+            <input asp-for="Name" />
+        </div>
+        <div>
+            <label asp-for="BirthYear">Enter BirthYear:</label>
+            <input asp-for="BirthYear" />
+        </div>
+        <div>
+            <label>Name:</label>
+            <input value="@ViewBag.Name" readonly />
+        </div>
+        <div>
+            <label>Age:</label>
+            <input value="@(ViewBag.Age == 0 ? String.Empty : ViewBag.Age)" readonly/>
+        </div>
+        <button type="submit">Enter</button>
+        <a asp-action="Index">Clear</a>
+    </form>
+</body>
+</html>
