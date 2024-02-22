@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CIS172_TestCoreAppMelton.props" />
+</Project>
